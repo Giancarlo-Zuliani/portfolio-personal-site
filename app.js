@@ -12,6 +12,17 @@ $(document).ready(function () {
     $(this).toggleClass('open');
     $('#portrait').toggleClass('slidedown');
     $('aside').toggleClass('slideleft');
+    var anchors = $('aside a');
+
+    var _loop = function _loop(i) {
+      setTimeout(function () {
+        $(anchors[i]).toggleClass('slide');
+      }, 300 * i);
+    };
+
+    for (var i = 0; i < anchors.length; i++) {
+      _loop(i);
+    }
   });
 });
 console.log('ciao');
