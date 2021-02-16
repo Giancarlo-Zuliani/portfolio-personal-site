@@ -3,6 +3,12 @@ $(document).ready(function() {
         $(this).toggleClass('open');
         $('#portrait').toggleClass('slidedown');
         $('aside').toggleClass('slideleft');
+        let anchors = $('aside a');
+        for (let i = 0; i < anchors.length; i++) {
+            setTimeout(() => {
+                $(anchors[i]).toggleClass('slide');
+            }, 300 * i);
+        }
     });
 });
 
