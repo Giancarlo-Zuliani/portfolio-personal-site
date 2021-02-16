@@ -1,0 +1,32 @@
+main {
+    width: 50%;
+    margin: 15% auto;
+    @include flex(column, space-between, center);
+}
+
+h1,
+h2 {
+    color: $textcolor;
+}
+
+h2 {
+    padding: 25px 35px;
+    border: solid 2px $textcolor;
+    text-decoration: underline;
+    margin-top: 35px;
+}
+
+ul {
+    list-style: none;
+    li {
+        display: inline-block;
+        color: $textcolor;
+        font-size: 1.8rem;
+        margin: 15px;
+        transition: transform ease .4s;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.3);
+        }
+    }
+}
