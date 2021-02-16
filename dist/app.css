@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Lexend Mega", sans-serif;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
 }
 
 main {
-  width: 50%;
+  width: 70%;
   margin: 15% auto;
   display: flex;
   flex-direction: column;
@@ -66,7 +67,7 @@ header #nav-icon span {
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
-  transition: 0.25s ease-in-out;
+  transition: 0.35s ease-in-out;
 }
 header #nav-icon span:nth-child(1) {
   top: 0px;
@@ -96,16 +97,18 @@ header #portrait {
   position: absolute;
   top: -100%;
   background-color: black;
-  transition: all ease 0.5s;
+  transition: all ease 0.7s;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border-bottom: solid #212232 5px;
 }
 header #portrait img {
   max-width: 30%;
   max-height: 50%;
   border-radius: 100%;
+  border: solid #212232 5px;
 }
 header #portrait.slidedown {
   top: 0;
@@ -123,14 +126,25 @@ header aside {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  border-top: #e73635 solid 5px;
 }
 header aside a {
-  color: #e73635;
-  font-size: 1.5rem;
+  color: #212232;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.8rem;
   position: relative;
-  right: 500px;
-  transition: all ease 0.8s;
+  right: 1500px;
+  transition: left, right ease 0.8s;
   margin-top: 25px;
+  background-color: #e73635;
+  padding: 15px 20px;
+  box-shadow: 4px 4px 10px 4px #212232;
+}
+header aside a:hover {
+  color: #e73635;
+  background-color: #212232;
+  box-shadow: 3px 3px 8px 3px #e73635;
 }
 header aside a.slide {
   right: 0;
