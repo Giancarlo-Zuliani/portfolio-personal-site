@@ -28,10 +28,10 @@ header {
             -moz-transform: rotate(0deg);
             -o-transform: rotate(0deg);
             transform: rotate(0deg);
-            -webkit-transition: .25s ease-in-out;
-            -moz-transition: .25s ease-in-out;
-            -o-transition: .25s ease-in-out;
-            transition: .25s ease-in-out;
+            -webkit-transition: .35s ease-in-out;
+            -moz-transition: .35s ease-in-out;
+            -o-transition: .35s ease-in-out;
+            transition: .35s ease-in-out;
             &:nth-child(1) {
                 top: 0px;
             }
@@ -68,12 +68,14 @@ header {
         position: absolute;
         top: -100%;
         background-color: black;
-        transition: all ease .5s;
+        transition: all ease .7s;
         @include flex(row, center, center);
+        border-bottom: solid $btncolor 5px;
         img {
             max-width: 30%;
             max-height: 50%;
             border-radius: 100%;
+            border: solid $btncolor 5px;
         }
     }
     #portrait.slidedown {
@@ -89,13 +91,24 @@ header {
         text-align: center;
         transition: all ease .5s;
         @include flex(column, flex-start, center);
+        border-top: $textcolor solid 5px;
         a {
-            color: $textcolor;
-            font-size: 1.5rem;
+            color: $btncolor;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.8rem;
             position: relative;
-            right: 500px;
-            transition: all ease .8s;
+            right: 1500px;
+            transition: left, right ease .8s;
             margin-top: 25px;
+            background-color: $textcolor;
+            padding: 15px 20px;
+            box-shadow: 4px 4px 10px 4px $btncolor;
+            &:hover {
+                color: $textcolor;
+                background-color: $btncolor;
+                box-shadow: 3px 3px 8px 3px $textcolor;
+            }
         }
         a.slide {
             right: 0;
