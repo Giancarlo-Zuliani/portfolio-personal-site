@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../lib/typingEffect.js"></script>
 
     <body>
         <header>
@@ -30,12 +31,17 @@
         </header>
         <main>
             <h1>Giancarlo Zuliani</h1>
-            <h2>Full stack web developer</h2>
+            <div class="banner">
+                <span id="typedbanner"></span>
+                <span class="cursor"></span>
+            </div>
             <ul>
                 <li><i class="fab fa-github"></i></li>
                 <li><i class="fab fa-linkedin"></i></li>
             </ul>
         </main>
+        <span id="typedbanner"></span>
+        <span class="cursor"></span>
     </body>
 
     <script src="app.js"></script>
