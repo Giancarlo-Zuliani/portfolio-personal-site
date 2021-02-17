@@ -9,3 +9,23 @@ body {
     background-image: url("https://wallpapercave.com/wp/wp2757874.gif");
     background-size: cover;
 }
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.banner {
+    width: 80%;
+    height: 50px;
+    padding: 25px;
+    text-align: center;
+    border: solid $textcolor 3px;
+}
