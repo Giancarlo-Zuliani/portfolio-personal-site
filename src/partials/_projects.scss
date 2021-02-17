@@ -1,0 +1,58 @@
+.codebanner {
+    margin: 50px 25px;
+    color: white;
+    font-size: 2.2rem;
+}
+
+section {
+    z-index: 1;
+    @include flex(row, flex-start, center);
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 50px auto;
+    div {
+        position: relative;
+        width: calc(50% - 24px);
+        height: 250px;
+        margin: 20px 10px;
+        border: $textcolor solid 2px;
+        @include flex(column, space-between, center);
+        p {
+            max-height: 40%;
+            overflow-y: auto;
+            color: white;
+        }
+        img {
+            width: 100%;
+            height: 60%;
+            border: solid 3px $textcolor;
+        }
+        a {
+            width: 100%;
+            background-color: $btncolor;
+            color: $textcolor;
+            text-decoration: none;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+        .languages {
+            position: absolute;
+            width: 100%;
+            border: none;
+            @include flex (row, space-around, center);
+            top: -50%;
+            transition: position linear .4s;
+            display: none;
+            img {
+                border: none;
+                width: 20%;
+            }
+        }
+        &:hover .languages {
+            top: -65%;
+            display: flex;
+            color: $textcolor;
+        }
+    }
+}

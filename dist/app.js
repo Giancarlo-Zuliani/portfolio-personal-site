@@ -8,7 +8,10 @@
 /***/ (() => {
 
 $(document).ready(function () {
+  var contentswitch = true;
   $('#nav-icon').click(function () {
+    contentswitch === true ? $('section').hide() : $('section').slideDown('slow');
+    contentswitch = !contentswitch;
     $(this).toggleClass('open');
     $('#portrait').toggleClass('slidedown');
     $('aside').toggleClass('slideleft');
@@ -92,11 +95,18 @@ $(document).ready(function () {
 }); */
 
 $('#typedbanner').typing({
-  strings: ['javascript berserker', 'code hard play hard', 'full stack web developer'],
+  strings: ['javascript berserker', 'code hard , play hard', 'laravel enthusiast', 'jquery devoted', 'full stack web developer'],
   cursorBlink: true,
   loopCount: 5,
   typingColor: "#e73635",
   color: "#e73635"
+});
+$('#codetext').typing({
+  strings: ['LARAVEL', 'PHP', 'MySql', 'JQuery', 'JAVASCRIPT', 'SaSS'],
+  cursorBlink: true,
+  loopCount: 50,
+  typingColor: 'white',
+  color: 'white'
 });
 
 /***/ }),

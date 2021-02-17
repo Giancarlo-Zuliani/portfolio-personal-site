@@ -7,7 +7,7 @@
 
 body {
     background-image: url("https://wallpapercave.com/wp/wp2757874.gif");
-    background-size: cover;
+    background-size: static, cover;
 }
 
 @keyframes blink {
@@ -25,7 +25,8 @@ body {
 .banner {
     width: 80%;
     height: 50px;
-    padding: 25px;
+    padding: 15px;
+    margin-top: 10px;
     text-align: center;
     border: solid $textcolor 3px;
 }
