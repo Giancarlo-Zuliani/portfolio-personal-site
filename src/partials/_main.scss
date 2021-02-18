@@ -5,24 +5,25 @@ main {
     .banner {
         padding-bottom: 25px;
     }
+    ul {
+        list-style: none;
+        li {
+            display: inline-block;
+            color: $textcolor;
+            font-size: 2rem;
+            margin: 15px;
+            transition: transform ease .4s;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.4);
+            }
+        }
+    }
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
     color: $textcolor;
-}
-
-ul {
-    list-style: none;
-    li {
-        display: inline-block;
-        color: $textcolor;
-        font-size: 2rem;
-        margin: 15px;
-        transition: transform ease .4s;
-        &:hover {
-            cursor: pointer;
-            transform: scale(1.4);
-        }
-    }
 }
